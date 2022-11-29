@@ -1,6 +1,7 @@
 import { toHaveClass } from '@testing-library/jest-dom/dist/matchers';
 import { isVisible } from '@testing-library/user-event/dist/utils';
 import { React, useState } from 'react'
+import { Button } from '@mui/material';
 import "./App.css";
 export default function App() {
   const [counter1, setCounter1] = useState(0);
@@ -85,29 +86,29 @@ const show = ({ available }) => {
    
   <div className="card__box">    
     <span className="counter__output">{counter4}</span>
-    <button className="reset" onClick={reset4} >Reset</button>
+    <Button variant="contained" className="reset" onClick={reset4} >Reset</Button>
     <div className="counter1">
       <div className="btn__container">
       <span className="counter__output">{counter1}</span>
-          <button className="control__btn" onClick={increase1}>+</button>
-          <button className="control__btn" onClick={decrease1}>-</button>
-          <button className="reset" onClick={reset1}>Reset</button>
+          <Button variant="contained" className="control__btn" onClick={increase1}>+</Button>
+          <Button variant="contained" className="control__btn" onClick={decrease1}>-</Button>
+          <Button variant="contained" className="reset" onClick={reset1}>Reset</Button>
       </div>
     </div>
     <div className="counter2">
       <div className="btn__container">
       <span className="counter__output">{counter2}</span>
-          <button className="control__btn" onClick={increase2}>+</button>
-          <button className="control__btn" onClick={decrease2}>-</button>
-          <button className="reset" onClick={reset2}>Reset</button>
+      <Button variant="contained" className="control__btn" onClick={increase2}>+</Button>
+          <Button variant="contained" className="control__btn" onClick={decrease2}>-</Button>
+          <Button variant="contained" className="reset" onClick={reset2}>Reset</Button>
       </div>
     </div>
     <div className="counter3">
       <div className="btn__container">
       <span className="counter__output">{counter3}</span>
-          <button className="control__btn" onClick={increase3}>+</button>
-          <button className="control__btn" onClick={decrease3}>-</button>
-          <button className="reset" onClick={reset3}>Reset</button>
+      <Button variant="contained" className="control__btn" onClick={increase2}>+</Button>
+          <Button variant="contained" className="control__btn" onClick={decrease2}>-</Button>
+          <Button variant="contained" className="reset" onClick={reset2}>Reset</Button>
       </div>
     </div>
   </div>
