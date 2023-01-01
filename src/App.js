@@ -2,6 +2,7 @@ import { toHaveClass } from '@testing-library/jest-dom/dist/matchers';
 import { isVisible } from '@testing-library/user-event/dist/utils';
 import { React, useState } from 'react'
 import { Button } from '@mui/material';
+import 'primeicons/primeicons.css';
 import "./App.css";
 export default function App() {
   const [counter1, setCounter1] = useState(0);
@@ -84,9 +85,13 @@ const show = ({ available }) => {
 }
   return (
    
-  <div className="card__box">    
+  <div className="card__box"> 
+  <script src="https://unpkg.com/primereact/core/core.min.js"></script>
+<script src="https://unpkg.com/primereact/calendar/calendar.min.js"></script>
+
     <span className="counter__output">{counter4}</span>
-    <Button variant="contained" className="reset" onClick={reset4} >Reset</Button>
+    <Button variant="contained" className="reset" onClick={reset4} ><i className="pi pi-check mr-2"></i>
+</Button>
     <div className="counter1">
       <div className="btn__container">
       <span className="counter__output">{counter1}</span>
