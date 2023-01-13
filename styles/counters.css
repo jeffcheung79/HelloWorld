@@ -12,6 +12,10 @@
         border: 3px solid #000000; 
       
       }
+      .container{
+        background-color: #20ccd5;
+      
+      }
       .idcount{
         visibility: visible;
         border: none;
