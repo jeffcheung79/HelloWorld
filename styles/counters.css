@@ -48,11 +48,10 @@
         visibility: visible;
         border: none;
         color: rgb(0, 0, 0);
-        padding: 25px 20px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 25px;
+        font-size: 20px;
         border-radius: 10px;
         background-color:#fc2525 ;
         border: 3px solid #000000; 
@@ -103,7 +102,7 @@
         border: 3px solid #000000; 
         background-color: #36ffeb;
         color: rgb(0, 0, 0);
-        padding: 7px 8px;
+        padding: 11px 11px;
         text-align: center;
         text-decoration: none;
         display: inline-block;

@@ -1,7 +1,8 @@
 import React from 'react';
 import Counter from './counter';
 import '../pages/_app.js'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRedo, faRecycle,faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 
 class Counters extends React.Component{
@@ -15,14 +16,15 @@ class Counters extends React.Component{
     return(
       <div className='button-box'>
 
-<i class="fa fa-shopping-cart" aria-hidden="true" >   <span> </span><span className='idcount'>0</span>  Items
-</i><br />        <br></br>
+<FontAwesomeIcon icon= {faShoppingCart} />  <span> </span><span className='idcount'>0</span>  Items
+<br />        <br></br>
 
-      <button onClick = {onReset}className="reset" ><i class="fa fa-redo" aria-hidden="true"></i></button>
+      <button onClick = {onReset}className="reset" > <FontAwesomeIcon icon= {faRedo} />
+</button>
       {"    "}      {"    "}      {"    "}
 
 
-      <button onClick={() => window.location.reload()} className="reload" ><i class="fa fa-recycle" aria-hidden="true"></i></button>
+      <button onClick={() => window.location.reload()} className="reload" > <FontAwesomeIcon icon= {faRecycle} /></button>
       {counters.map(counter =>
         <Counter
          key = {counter.id}

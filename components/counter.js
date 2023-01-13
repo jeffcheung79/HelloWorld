@@ -1,5 +1,7 @@
 import React from 'react';
 import '../pages/_app.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faTrash} from '@fortawesome/free-solid-svg-icons'
 
 class Counter extends React.Component {
   render(){
@@ -11,7 +13,7 @@ class Counter extends React.Component {
       <button onClick = {() => this.props.onDecrement(this.props.counter)}
       className = "Mbutton">-</button>
       <button onClick = {() => this.props.onDelete(this.props.counter.id)}
-        className="delete"> <i class="fa fa-trash" aria-hidden="true"></i></button>
+        className="delete"><FontAwesomeIcon icon= {faTrash} /></button>
       </div>
 
     );
